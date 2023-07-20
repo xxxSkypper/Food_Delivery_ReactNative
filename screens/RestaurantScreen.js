@@ -20,23 +20,25 @@ export default function RestaurantScreen() {
            <AddCart />
            <StatusBar style='light' />
             <ScrollView>
-                <View className="flex-row items-center space-x-60 mt-5">
+                <View className="flex-row items-center justify-center space-x-52 mt-5">
                 <TouchableOpacity 
                 onPress={() => navigation.goBack()}
-                className="bg-gray-500 p-2 rounded-full shadow ml-5"
+                className="p-3 rounded-full shadow "
+                style={{ backgroundColor: 'whitesmoke',  borderWidth: 3, borderColor: 'rgba(209, 209, 209,0.7)',}}
                 >
                     <Icon.ArrowLeft strokeWidth={3} stroke="black" />
                 </TouchableOpacity>
                 <TouchableOpacity 
                 onPress={() => navigation.goBack()}
-                className="bg-gray-50 p-2 rounded-full shadow"
+                className="p-3  rounded-full"
+                style={{ backgroundColor: 'whitesmoke',  borderWidth: 3, borderColor: 'rgba(209, 209, 209,0.7)',}}
                 >
                     <Icon.Heart strokeWidth={3} stroke="black" />
                 </TouchableOpacity>
 
                 </View>
             <View 
-                className="bg-white mt-12 pt-6"
+                className="mt-12 pt-6"
                 >
                     <View className="px-5">
                         <Text className="text-3xl font-bold">{item.name}</Text>
@@ -71,7 +73,9 @@ export default function RestaurantScreen() {
                     </View>
                     <Text className="text-gray-200 mt-2">{item.description}</Text>
                 </View>
-                <View className="pb-36 bg-white">
+                <View 
+                className="pb-36"
+                >
                     <Text className="px-4 py-4 text-2xl font-bold">Add extra Dishes
                     </Text>
 

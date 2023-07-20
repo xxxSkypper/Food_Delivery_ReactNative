@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "recipeApp",
-    "slug": "recipeApp",
+    "name": "Food-Delivery-App",
+    "slug": "food-delivery-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ef571794-51be-48b4-b99b-36d931c0942a"
+      }
+    },
+    "owner": "xxxskypper",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ef571794-51be-48b4-b99b-36d931c0942a"
     }
   }
 }
